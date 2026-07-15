@@ -1,16 +1,13 @@
 {
-  "buildCommand": "cd frontend && npm run build",
+  "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/build",
   "devCommand": "cd frontend && npm start",
-  "installCommand": "cd frontend && npm install",
-  "env": {
-    "REACT_APP_API_URL": "@react_app_api_url"
-  },
-  "regions": ["iad1"],
-  "functions": {
-    "api/**/*.js": {
-      "memory": 1024,
-      "maxDuration": 60
+  "installCommand": "npm install",
+  "framework": "create-react-app",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
-  }
+  ]
 }
