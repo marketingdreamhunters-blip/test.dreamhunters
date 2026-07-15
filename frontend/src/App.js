@@ -1,13 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setIsLoading(false);
-  }, []);
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Navigation */}
