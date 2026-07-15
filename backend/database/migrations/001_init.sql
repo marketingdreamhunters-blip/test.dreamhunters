@@ -1,0 +1,2 @@
+-- Database migrations
+-- Migration files for schema creation and updates
